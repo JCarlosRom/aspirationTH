@@ -40,3 +40,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
+### Things to improve
+
+* Code Structuring:
+Write Graphql unit tests, use a pattern design
+* Refactoring:
+Create shorter functions, delete unnecessary dom components, format the code of a more clean way to read 
+* Additional Features:
+Working in design and UI and UX to improve the experience of user
+
