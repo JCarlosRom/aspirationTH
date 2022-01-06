@@ -27,7 +27,11 @@ _Below is an example of how you can instruct your audience on installing and set
    ```sh
    npm start
    ```
-
+4. Create a .env file
+   ```sh
+   REACT_APP_GITHUB_ACCESS_TOKEN=YOUR_ACCESS_TOKEN
+   ```
+   
 ## Available Scripts
 
 In the project directory, you can run:
