@@ -1,7 +1,7 @@
 
 import React from "react"; 
 import {gql, useQuery} from "@apollo/client"
-import Topic from "./Topic";
+import Topic from "../Topic/Topic";
 
 const TOPIC = gql`
   query topic ($name:String!){
@@ -33,7 +33,7 @@ export default function DetailComponent({name}){
     let {topic} = data;
     
     return (
-        <div>
+        <div data-testid="DetailComponent">
             <h1>{topic.name}</h1>
             <p>Stargazer Count {topic.stargazerCount}</p>
             <h2>Related Topics</h2>

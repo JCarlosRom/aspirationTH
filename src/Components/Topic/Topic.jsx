@@ -11,7 +11,7 @@ export default function Topic ({data}){
     const {id, name} = data;
 
     return(
-        <div key={id} className="topic" onClick={()=>GetInfo(name)}>
+        <div key={id} className="topic" onClick={()=>GetInfo(name)} data-testid="Topic">
             <p style={{textAlign:"center"}}>{name}</p>
         </div>
     )

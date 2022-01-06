@@ -1,6 +1,6 @@
 import React from "react"; 
 import {gql, useQuery} from "@apollo/client"
-import Topic from "../Components/Topic";
+import Topic from "../Components/Topic/Topic";
 
 const TOPICS = gql`
   query topics ($name:String!){

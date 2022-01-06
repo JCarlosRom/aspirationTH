@@ -1,5 +1,5 @@
 import {useLocation}  from 'react-router-dom';
-import DetailComponent  from '../Components/DetailComponent';
+import DetailComponent  from '../Components/Details/DetailComponent';
 
 
 export default function Detail(){
