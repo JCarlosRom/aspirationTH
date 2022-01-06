@@ -1,0 +1,14 @@
+p{
+    color:white
+}
+
+h1,h2,h3{
+    color: white;
+}
+
+.topic{
+    width: 120px;
+    border: 2px solid white;
+    height: 40px;
+    cursor: pointer;
+}
