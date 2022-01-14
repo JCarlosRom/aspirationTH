@@ -9,7 +9,6 @@ const httpLink = {
     authorization:`bearer ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`
   }
 }
-console.log(`bearer ${process.env.REACT_APP_GITHUB_ACCESS_TOKEN}`)
 // Initialize Apollo Client
 const client = new ApolloClient({
   cache: new InMemoryCache(),

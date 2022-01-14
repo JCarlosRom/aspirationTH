@@ -1,26 +1,12 @@
 
 import React from "react"; 
-import {gql, useQuery} from "@apollo/client"
+import {useQuery} from "@apollo/client"
+import { TOPIC } from "../../Graphql/Queries";
 import Topic from "../Topic/Topic";
 
-const TOPIC = gql`
-  query topic ($name:String!){
-    topic(name:$name){
-        id
-        name
-        stargazerCount
-        relatedTopics(first: 10) {
-            id
-            name
-        }
-    
 
-    }
-  }
-`;
 
 export default function DetailComponent({name}){
-    console.log(name)
 
     const {loading, data, error } = useQuery(TOPIC, {
         variables: {name}
@@ -28,9 +14,9 @@ export default function DetailComponent({name}){
 
     if(loading) return (<p>Loading</p>)
     if(error) return (<p>Loading</p>)
-    console.log(data.topic)
 
-    let {topic} = data;
+
+    const {topic} = data;
     
     return (
         <div data-testid="DetailComponent">

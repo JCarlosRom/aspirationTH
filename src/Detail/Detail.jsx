@@ -3,8 +3,8 @@ import DetailComponent  from '../Components/Details/DetailComponent';
 
 
 export default function Detail(){
-    let location = useLocation()
-    let name = location.state.nameTopic;
+    const location = useLocation()
+    const name = location.state.nameTopic;
     
     return(
        <div>
